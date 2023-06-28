@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace;
+    background: url(./jpgs/blue\ sky.jpg) no-repeat center center/cover;
+}
+
+.container {
+    height: 100vh;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+}
+
+section{
+    background-color:  rgba(0, 0, 0, .5);
+    height: 300px;
+    width: 600px;
+    margin: auto;
+}
+
+#search {
+    margin: 10px;
+}
+#search input {
+    width: 250px;
+    position: absolute;
+    padding: 8px 20px;  
+    display: inline-block; 
+    border: none; 
+    border-radius: 2px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+#search input:focus {
+    outline: 2px solid indigo;
+}
+#search i {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+    color: gray;
+}
+#weather {
+    color: ivory;
+    margin: 40px;
+}
+
+#weather #icon {
+    display: flex;
+}
+#weather #icon img {
+    height: 40px;
+    width: 40px;
+}

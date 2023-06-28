@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+    <title>My Weather</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div id="search"> 
+                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                <input type="text" placeholder="port-harcourt, ng"> 
+            </div>
+            <div class="loader">
+            </div>
+    
+            <div id="weather">
+                <h2></h2>
+                <h3></h3>
+                <div id="icon">
+                    <img src="" onerror="this.style.display ='none'"  onload="this.style.display ='block'" ><p></p>
+                </div>
+                <div>
+                    <p id="humidity"></p>
+                    <p id="pressure"></p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+            <!-- <p>To make it more precise put the city's name, comma, 2-letter country code (ISO3166). You will get all proper cities in chosen country.
+                The order is important - the first is city name then comma then country. Example - London, GB or New York, US.</p> -->
+        </section>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/d82bb5da74.js" crossorigin="anonymous"></script>
+    <script src="request.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
